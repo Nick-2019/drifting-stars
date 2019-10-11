@@ -3,7 +3,7 @@ const textBoxReducer = (state = [], action) => {
         case 'ADD':
             return state.push(action.payload)
         case 'CLEAR':
-            return []
+            return state = []
         default:
             return state
     }
