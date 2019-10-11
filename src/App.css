@@ -37,5 +37,11 @@ textarea {
 
 button {
   font-size: 30px
+
+}
+
+.window {
+  border-width: 10px;
+  border-color: white;
   
 }
