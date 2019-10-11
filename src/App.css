@@ -23,3 +23,14 @@
 .App-link {
   color: #09d3ac;
 }
+
+textarea {
+  background: transparent;
+  resize: none;
+  border-width: 10px;
+  border-color: white;
+  color: white;
+  width: 1000px;
+  height: 150px;
+  font-size: 50px
+}
