@@ -3,6 +3,7 @@ import Message from './subComp/message'
 
 
 const arr = ["stromg", "string", "bing", "Linger"]
+
 export default class Window extends Component{
     
     render(){
