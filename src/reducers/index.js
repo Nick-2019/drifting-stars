@@ -4,3 +4,5 @@ import {combineReducers} from 'redux';
 const allReducers = combineReducers({
     textBox: textBoxReducer
 })
+
+export default allReducers
