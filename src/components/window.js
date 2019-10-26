@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Message from './subComp/message'
+import {useSelector, useDispatch} from 'react-redux'
 
 
-const arr = ["stromg", "string", "bing", "Linger"]
+
+const arr = useSelector(state => state.textbox)
 
 export default class Window extends Component{
     
