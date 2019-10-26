@@ -4,11 +4,13 @@ import {useSelector, useDispatch} from 'react-redux'
 
 
 
-const arr = useSelector(state => state.textbox)
+const arr = []
 
 export default class Window extends Component{
     
+    
     render(){
+        
         return(
             <div id="window">
                 <div>
