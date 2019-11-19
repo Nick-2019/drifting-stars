@@ -1,7 +1,11 @@
-const textBoxReducer = (state = ["Apple", "Papaya"], action) => {
+const textBoxReducer = (state = [], action) => {
     switch(action.type){
         case 'ADD':
-            return state.push(action.payload)
+            state.push(action.payload)
+
+            return state
+            // state.push(action.payload);
+            // return state
         case 'CLEAR':
             return state = []
         default:
