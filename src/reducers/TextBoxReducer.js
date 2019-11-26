@@ -1,13 +1,22 @@
-const textBoxReducer = (state = [], action) => {
+const initialUserState = {
+    arr:[]
+}
+
+
+const textBoxReducer = (state = initialUserState, action) => {
+
+    
     switch(action.type){
         case 'ADD':
-            state.push(action.payload)
-
-            return state
-            // state.push(action.payload);
-            // return state
+            return{
+                ...state,
+                arr: state.arr.concat([action.payload])
+            }
         case 'CLEAR':
-            return state = []
+            return{
+                ...state,
+                arr: []
+            }
         default:
             return state
     }

@@ -12,6 +12,7 @@ export default function Box() {
         const dispatch = useDispatch();
 
         let message = () => {
+            dispatch(add(document.getElementById("jarjar").value))
             var mess = document.getElementById("jarjar")
             // console.log(mess.value)
             // dispatch(add(mess))
@@ -25,7 +26,7 @@ export default function Box() {
                 <textarea id="jarjar" >
                 </textarea>
                 <br></br>
-                <button onClick={() => dispatch(add( "testing a string" )) } >Send thoughts</button>
+                <button onClick={() => message() } >Send thoughts</button>
             </div>
         )
 }
